@@ -1,0 +1,112 @@
+
+*{
+    font-family: 'JetBrains Mono';
+}
+
+body, html {
+    background-color: #2f2f2f;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    text-align: center;
+}
+
+.main h1{
+    font-size: 32px;
+}
+
+.main h2{
+    font-size: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.button {
+    margin-bottom: 10px;
+    background-color: rgba(128, 128, 128, 0.756);
+    border-radius: 13%;
+    width: 160px;
+    height: 50px;
+}
+
+.buttons-container h3{
+    margin-left: 30px;
+}
+
+.button a{
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+}
+
+.button a:hover{
+    color: #2f2f2f;
+}
+
+.button:hover{
+    background-color: grey;
+}
+
+i{
+    width: 70px;
+    transition: transform ease 400ms;
+}
+
+i:hover{
+    transform: translate(0, 10px);
+}
+
+
+
+
+.auto-type{
+    color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+    .main h1{
+        font-size: 26px;
+    }
+
+    .main h2{
+        font-size: 24px;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        left: 0;
+        padding: 11px;
+    }
+    .button {
+        margin-bottom: 10px;
+        background-color: rgba(128, 128, 128, 0.756);
+        border-radius: 13%;
+        width: 123px;
+        height: 38.5px;
+    }
+    a button{
+        font-size: 10px;
+        text-decoration: none;
+        color:black;
+    }
+    .buttons-container h3{
+        font-size: smaller;
+        margin-left: 25px;
+    }
+}
